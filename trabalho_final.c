@@ -28,20 +28,20 @@ typedef struct{
 int menu();
 int menu_funcionario();
 int menu_departamento();
-//FUN«OES DE DEPARTAMENTO
+//FUN√áOES DE DEPARTAMENTO
 void criar_dep();
 void altera_nome_dep();
 void consultar_dep();
 void listar_dep();
 void excluir_dep(); 
-//FUN«’ES DE FUNCIONARIO
+//FUN√á√ïES DE FUNCIONARIO
 void cadastrar_funcionario();
 void alterar_dados_funcionario();
 void transferir_funcionario();
 void demitir_funcionario();
 void pesquisar_funcionario();
 void listar_funcionario();
-//OUTRAS FUN«’ES
+//OUTRAS FUN√á√ïES
 int verifica_data();
 int eh_bissexto();
 
@@ -122,9 +122,9 @@ int main(){
 	return 0;
 }
 /*
-OBJETIVO:		Imprimir o menu principal e solicitar que o usu·rio escolha uma opÁ„o do mesmo;
+OBJETIVO:		Imprimir o menu principal e solicitar que o usu√°rio escolha uma op√ß√£o do mesmo;
 PARAMETROS:		Nao;
-RETORNO: 		Retorna "int resp" para a funÁ„o principal, que armazena a opcao escolhida pelo usu·rio;
+RETORNO: 		Retorna "int resp" para a fun√ß√£o principal, que armazena a opcao escolhida pelo usu√°rio;
 */
 int menu(){
 	
@@ -153,9 +153,9 @@ int menu(){
 	return resp;
 }
 /*
-OBJETIVO:	Imprimir o menu funcionario e solicitar que o usu·rio escolha uma opÁ„o do mesmo;
-PARAMETROS: N„o;
-RETORNO:	Retorna "int respFun" para a funÁ„o principal, que armazena a opcao escolhida pelo usu·rio;
+OBJETIVO:	Imprimir o menu funcionario e solicitar que o usu√°rio escolha uma op√ß√£o do mesmo;
+PARAMETROS: N√£o;
+RETORNO:	Retorna "int respFun" para a fun√ß√£o principal, que armazena a opcao escolhida pelo usu√°rio;
 */
 int menu_funcionario(){
 		
@@ -188,9 +188,9 @@ int menu_funcionario(){
 	return respFun;
 }
 /*
-OBJETIIVO:		Imprimir o menu departamento e solicitar que o usuario escolha uma opÁ„o do mesmo;
-PAR¬METROS:		N„o;
-RETORNO:		Retorna "int respDep" para a funÁ„o principal, que armazena a opÁ„o escolhida pelo usu·rio;	
+OBJETIIVO:		Imprimir o menu departamento e solicitar que o usuario escolha uma op√ß√£o do mesmo;
+PAR√ÇMETROS:		N√£o;
+RETORNO:		Retorna "int respDep" para a fun√ß√£o principal, que armazena a op√ß√£o escolhida pelo usu√°rio;	
 */
 int menu_departamento(){
 	
@@ -224,10 +224,10 @@ int menu_departamento(){
 }
 
 /*
-OBJETIVO:	Criar novos departamentos e armazen·-los no vetor de struct dep[D];
-PARAMETROS:	Recebe o vetor de struct "dep[D]" para que um novo departamento e seus dados possam ser armazenados em uma posiÁ„o desse vetor;
-			Recebe por ponteiro a vari·vel  de controle "contDep";
-RETORNO: 	N„o;
+OBJETIVO:	Criar novos departamentos e armazen√°-los no vetor de struct dep[D];
+PARAMETROS:	Recebe o vetor de struct "dep[D]" para que um novo departamento e seus dados possam ser armazenados em uma posi√ß√£o desse vetor;
+			Recebe por ponteiro a vari√°vel  de controle "contDep";
+RETORNO: 	N√£o;
 */
 void criar_dep(tDepartamento dep[D], int *contDep){
 	
@@ -348,7 +348,7 @@ void criar_dep(tDepartamento dep[D], int *contDep){
 						gets(aux.nome);		
 						
 						int resp2;
-			   			do{ // CONFIRMA«√O DO CADASTRO
+			   			do{ // CONFIRMA√á√ÉO DO CADASTRO
 							resp2 = -1;
 							system("cls");
 							printf("------------------------------------------------------------\n");	
@@ -398,10 +398,10 @@ void criar_dep(tDepartamento dep[D], int *contDep){
 	}	
 }
 /*
-OBJETIVO:	Possibilitar a alteraÁ„o do nome de um departamento;
-PARAMETROS:	Recebe o vetor de sruct "dep[D]" com todos os seus dados, possibilitando a pesquisa de um derpartamento pelo seu cÛdigo e
-			a alteraÁ„o do nome do mesmo;
-RETORNO:	N„o;
+OBJETIVO:	Possibilitar a altera√ß√£o do nome de um departamento;
+PARAMETROS:	Recebe o vetor de sruct "dep[D]" com todos os seus dados, possibilitando a pesquisa de um derpartamento pelo seu c√≥digo e
+			a altera√ß√£o do nome do mesmo;
+RETORNO:	N√£o;
 */
 void altera_nome_dep(tDepartamento dep[D], int *contDep){
 	
@@ -518,12 +518,12 @@ void altera_nome_dep(tDepartamento dep[D], int *contDep){
 	}
 }
 /*
-OBJETIVO:	Exibir na tela as informaÁıes de um determinado departamento;
-PARAMETROS: Recebebe o vetor de struct "dep[D]" com as informaÁıes de todos os departamentos, possibilitando a pesquisa de um deles; 
-			Recebebe o vetor de struct "func[F]" para que possam ser verificados quantos e quais s„o os funcionarios lotados em cada
+OBJETIVO:	Exibir na tela as informa√ß√µes de um determinado departamento;
+PARAMETROS: Recebebe o vetor de struct "dep[D]" com as informa√ß√µes de todos os departamentos, possibilitando a pesquisa de um deles; 
+			Recebebe o vetor de struct "func[F]" para que possam ser verificados quantos e quais s√£o os funcionarios lotados em cada
 			departamento;
-			E recebe por ponteiros as veri·veis de controle "contFunc" e "contDep";
-RETORNO:	N„o;
+			E recebe por ponteiros as veri√°veis de controle "contFunc" e "contDep";
+RETORNO:	N√£o;
 */
 void consultar_dep(tDepartamento dep[D], tFuncionario func[F], int *contDep, int *contFunc){
 	
@@ -618,12 +618,12 @@ void consultar_dep(tDepartamento dep[D], tFuncionario func[F], int *contDep, int
 	}
 }
 /*
-OBJETIVO:	Listar todos os departamentod cadastradose suas respectivas informaÁıes;
-PARAMETROS:	Recebe o vetor de struct "dep[D]" para que sejam extraÌdas e exibidas na tela as informaÁıes de todos os departamentos;
+OBJETIVO:	Listar todos os departamentod cadastradose suas respectivas informa√ß√µes;
+PARAMETROS:	Recebe o vetor de struct "dep[D]" para que sejam extra√≠das e exibidas na tela as informa√ß√µes de todos os departamentos;
 			Recebe o vetor de struct "func[F]" para que posssam ser exibidos todos os funcionarios, cada um em seu departamento, na
 			lista detalhada;
-			Recebe por ponteiro as varii·veis de controle "contDep" e "contFunc";
-RETORNO:	N„o;
+			Recebe por ponteiro as varii√°veis de controle "contDep" e "contFunc";
+RETORNO:	N√£o;
 */
 void listar_dep(tDepartamento dep[D], tFuncionario func[F], int *contDep, int *contFunc){
 
@@ -708,11 +708,11 @@ void listar_dep(tDepartamento dep[D], tFuncionario func[F], int *contDep, int *c
 }
 /*
 OBJETIVO:	Remover um depatamento do vetor "dep[D]";
-PARAMETROS:	Recebe o vetor de struct dep[D] que possibilita a pesquisa por cÛdigo de um departamento e exclus„o do mesmo;
-			Recebe o vetor de struct func[F] a tÌtulo de verificaÁ„o da existencia de algum funcionario lotado no departamento
-			buscado, caso exista, n„o permite a exclus„o do mesmo;
-			E recebe por ponteiro as varo·veis de controle "contFunc" e "contDep";
-RETORNO:	N„o;
+PARAMETROS:	Recebe o vetor de struct dep[D] que possibilita a pesquisa por c√≥digo de um departamento e exclus√£o do mesmo;
+			Recebe o vetor de struct func[F] a t√≠tulo de verifica√ß√£o da existencia de algum funcionario lotado no departamento
+			buscado, caso exista, n√£o permite a exclus√£o do mesmo;
+			E recebe por ponteiro as varo√°veis de controle "contFunc" e "contDep";
+RETORNO:	N√£o;
 */
 void excluir_dep(tDepartamento dep[D], tFuncionario func[F], int *contDep, int *contFunc){
 
@@ -786,7 +786,7 @@ void excluir_dep(tDepartamento dep[D], tFuncionario func[F], int *contDep, int *
 						}
 					}
 					
-					if(quant>0){ //entra se existir algum funcionario lotado no departamento N√O EXCLUI
+					if(quant>0){ //entra se existir algum funcionario lotado no departamento N√ÉO EXCLUI
 						system("cls");
 						printf("------------------------------------------------------------\n");
 						printf("		 EXCLUIR DEPARTAMENTO\n");
@@ -798,7 +798,7 @@ void excluir_dep(tDepartamento dep[D], tFuncionario func[F], int *contDep, int *
 						printf("\nERRO: Ha fucionario(s) lotado(s) no departamento, portanto nao\neh possivel excluir!\n\n");
 						system("pause");
 						
-					}else{ //entra se nao existirem funcionarios lotados no departamento EXCLUS√O POSSÕVEL
+					}else{ //entra se nao existirem funcionarios lotados no departamento EXCLUS√ÉO POSS√çVEL
 						int resp2;
 						do{
 							system("cls");
@@ -850,15 +850,15 @@ void excluir_dep(tDepartamento dep[D], tFuncionario func[F], int *contDep, int *
 	}
 }
 
-						/*FIM DAS FUN«’ES DE DEPARTAMENTO*/
+						/*FIM DAS FUN√á√ïES DE DEPARTAMENTO*/
 //***************************************************************************************************************************************
 /*
-OBJETIVO:	Cadastrar um funcionario e todos os seus dados em uma posiÁ„o do vetor de struct func[F]
-PARAMETROS:	Recebe o vetor de sruct func[F] com todos os funcionarios e suas respectivas informaÁıes. E neste caso, possibilita
-   	   	    a inserÁ„o de novos funcionarios no vetor;
-   	   	    Recebe o vetor de struct dep[D] com todos os departamentos e suas respsctivas informaÁıes. Neste caso, ele tambÈm È
-   	   	    importante para a verificaÁ„o da existencia ou nao de um determinado departamento, realizado pelo usu·rio.
-RETORNO:	N„o;
+OBJETIVO:	Cadastrar um funcionario e todos os seus dados em uma posi√ß√£o do vetor de struct func[F]
+PARAMETROS:	Recebe o vetor de sruct func[F] com todos os funcionarios e suas respectivas informa√ß√µes. E neste caso, possibilita
+   	   	    a inser√ß√£o de novos funcionarios no vetor;
+   	   	    Recebe o vetor de struct dep[D] com todos os departamentos e suas respsctivas informa√ß√µes. Neste caso, ele tamb√©m √©
+   	   	    importante para a verifica√ß√£o da existencia ou nao de um determinado departamento, realizado pelo usu√°rio.
+RETORNO:	N√£o;
 */
 void cadastrar_funcionario(tFuncionario func[F], tDepartamento dep[D], int *contFunc, int *contDep){
 	
@@ -885,7 +885,7 @@ void cadastrar_funcionario(tFuncionario func[F], tDepartamento dep[D], int *cont
 		int resp2;
 		
 		do{
-			if(*contFunc == F){ //verifica todas as vezes se o vetor func[F] j· est· cheio;
+			if(*contFunc == F){ //verifica todas as vezes se o vetor func[F] j√° est√° cheio;
 				system("cls");
 				printf("------------------------------------------------------------\n");
 		   	   	printf("		CADASTRAR FUNCIONARIO\n");
@@ -1103,11 +1103,11 @@ void cadastrar_funcionario(tFuncionario func[F], tDepartamento dep[D], int *cont
 	}
 }
 /*
-OBJETIVO:	possibilitar a alteraÁ„o dos dados de um funcionario, com excess„o do seu departamento;
-PAR¬METROS:	Recebe o vetor de struct "func" com as informaÁıes de todos os funcionarios possiblitando a pesquisa por CPF e a alteraÁ„o
+OBJETIVO:	possibilitar a altera√ß√£o dos dados de um funcionario, com excess√£o do seu departamento;
+PAR√ÇMETROS:	Recebe o vetor de struct "func" com as informa√ß√µes de todos os funcionarios possiblitando a pesquisa por CPF e a altera√ß√£o
 			dos dados dos elementos do vetor;
 			Recebe por ponteiro a variavel de controle do tipo int "contFun";
-RETORNO:	N„o;
+RETORNO:	N√£o;
 */
 void alterar_dados_funcionario(tFuncionario func[F], int *contFunc){
 	
@@ -1258,9 +1258,9 @@ void alterar_dados_funcionario(tFuncionario func[F], int *contFunc){
 }
 /*
 OBJETIVO:	Transferir um funcionario de departamento
-PARAMETROS: Recebe os vetores de struct "func[F]" e "dep[D]" com todos os departamentos e funcionarios existentes e suas respsctivas informaÁıes;
-			Recebe por ponteiros as vari·veis de controle do tipo inteiras;
-RETORNO: 	N„o;
+PARAMETROS: Recebe os vetores de struct "func[F]" e "dep[D]" com todos os departamentos e funcionarios existentes e suas respsctivas informa√ß√µes;
+			Recebe por ponteiros as vari√°veis de controle do tipo inteiras;
+RETORNO: 	N√£o;
 */
 void transferir_funcionario(tFuncionario func[F], tDepartamento dep[D], int *contFunc, int *contDep){
 	if(*contFunc==0){
@@ -1402,9 +1402,9 @@ void transferir_funcionario(tFuncionario func[F], tDepartamento dep[D], int *con
 }
 /*
 OBJETIVO:	Excluir um funcionario do vetor de struct "func[F]";
-PARAMETROS: Recebe o vetor de struct "func" com as informaÁıes de todos os funcionarios possiblitando a pesquisa por CPF;
+PARAMETROS: Recebe o vetor de struct "func" com as informa√ß√µes de todos os funcionarios possiblitando a pesquisa por CPF;
 			Recebe por ponteiro a variavel de controle do tipo int "contFun";
-RETORNO:	N„o;
+RETORNO:	N√£o;
 */
 void demitir_funcionario(tFuncionario func[F], int *contFunc){
 	
@@ -1514,11 +1514,11 @@ void demitir_funcionario(tFuncionario func[F], int *contFunc){
 
 }
 /*
-OBJETIVO: 	Solicitar que o usu·rio pesquise um funcionario pelo CPF, caso o funcionario exista a funÁ„o exibir· todos os seus dados tela;
-PARAMETROS: Recebe o vetor de struct "func" com as informaÁıes de todos os funcionarios possiblitando a pesquisa por CPF;
+OBJETIVO: 	Solicitar que o usu√°rio pesquise um funcionario pelo CPF, caso o funcionario exista a fun√ß√£o exibir√° todos os seus dados tela;
+PARAMETROS: Recebe o vetor de struct "func" com as informa√ß√µes de todos os funcionarios possiblitando a pesquisa por CPF;
 			Recebe o veror de struc "dep" para que seja exibido o nome do departamento correspondente a pesquisa;
-			Recebe por ponteiros as vari·veis de controle do tipo int "contFunc" e "contDep";
-RETORNO: 	N„o;
+			Recebe por ponteiros as vari√°veis de controle do tipo int "contFunc" e "contDep";
+RETORNO: 	N√£o;
 */
 void pesquisar_funcionario(tFuncionario func[F], tDepartamento dep[D], int *contFunc, int *contDep){
 	if(*contFunc==0){
@@ -1610,12 +1610,12 @@ void pesquisar_funcionario(tFuncionario func[F], tDepartamento dep[D], int *cont
 	}
 }
 /*
-OBJETIVO:	Exibir na tela todos os funcionarios e suas respectivas informaÁıes;
-PARAMETROS:	Recebe o vetore de estruct "func[F]", para que possam sem exibidas as informaÁıes de todos os funcionarios;
-			Recebe o vetor de struct dep[D] para que o nome do departamento possa ser impresso junto ao seu cÛdigo e todas as informaÁıes de um
-			funcion·rio;
-			E recebe por ponteiro as vari·veis de controle "contFunc" e "contDep"; 
-RETORNO:	N„o;
+OBJETIVO:	Exibir na tela todos os funcionarios e suas respectivas informa√ß√µes;
+PARAMETROS:	Recebe o vetore de estruct "func[F]", para que possam sem exibidas as informa√ß√µes de todos os funcionarios;
+			Recebe o vetor de struct dep[D] para que o nome do departamento possa ser impresso junto ao seu c√≥digo e todas as informa√ß√µes de um
+			funcion√°rio;
+			E recebe por ponteiro as vari√°veis de controle "contFunc" e "contDep"; 
+RETORNO:	N√£o;
 */
 void listar_funcionario(tFuncionario func[F], tDepartamento dep[D], int *contFunc, int *contDep){
 	
@@ -1693,9 +1693,9 @@ void listar_funcionario(tFuncionario func[F], tDepartamento dep[D], int *contFun
 	}
 }
 /*
-OBJETIVO:	Verificar se uma data È valida;
+OBJETIVO:	Verificar se uma data √© valida;
 PARAMETROS: Recebe "int dia", "int mes" e "int ano" digitados pelo usuario;
-RETORNO:	Retorna um valor inteiro: 1 se a data for v·lida ou 0 se n„o for;
+RETORNO:	Retorna um valor inteiro: 1 se a data for v√°lida ou 0 se n√£o for;
 */
 int verifica_data(int dia, int mes, int ano){
 	
@@ -1748,8 +1748,8 @@ int verifica_data(int dia, int mes, int ano){
 	return flag;
 }
 /*
-OBJETIVO:	Verificar se um ano È bissexto;
-PARAMETROS: Recebe um ano digitado pelo usu·rio, armazenado na vari·vel "int ano";
+OBJETIVO:	Verificar se um ano √© bissexto;
+PARAMETROS: Recebe um ano digitado pelo usu√°rio, armazenado na vari√°vel "int ano";
 RETORNO:	Retorna um valor inteiro: 1 se for bissexto ou 0 se nao for;
 */
 int eh_bissexto(int ano){
